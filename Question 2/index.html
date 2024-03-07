@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PeoplePerHour</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+     <div class="row">
+        <nav class="navbar navbar-expand-sm navbar-primary">
+           <div class="container d-flex align-items-center">
+              <a class="navbar-brand" href="#">
+              <img src="pph.png" width="30" height="30" class="d-inline-block align-top"
+                 alt="peopleperhourlogo">
+              PeoplePerHour
+              </a>
+              <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                 data-bs-target="#n_bar" aria-controls="navbarNavAltMarkup" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="n_bar">
+                 <ul class="navbar-nav ms-auto d-flex align-items-center">
+                    <li class="nav-item">
+                       <a class="nav-link" href="#">
+                          <div class="dropdown d-block d-sm-none">
+                             <button class="btn dropdown-toggle colored" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                             Search
+                             </button>
+                             <ul class="dropdown-menu">
+                                <li>
+                                   <h6 class="dropdown-header">Buyer's can</h6>
+                                </li>
+                                <li>
+                                   <button class="dropdown-item" type="button">
+                                      <div class="text">
+                                         <span class="first-word">Search</span>
+                                         <span class="second-word">offers</span>
+                                         <span class="rest-of-sentence"><br>to buy now</span>
+                                      </div>
+                                   </button>
+                                </li>
+                                <li>
+                                   <hr class="dropdown-divider">
+                                </li>
+                                <li>
+                                   <button class="dropdown-item" type="button">
+                                      <div class="text">
+                                         <span class="first-word">Search</span>
+                                         <span class="second-word">freelancers</span>
+                                         <span class="rest-of-sentence"><br>to request a proposal</span>
+                                      </div>
+                                   </button>
+                                </li>
+                                <li>
+                                   <h6 class="dropdown-header">Freelancers can</h6>
+                                </li>
+                                <li>
+                                   <button class="dropdown-item" type="button">
+                                      <div class="text">
+                                         <span class="first-word">Search</span>
+                                         <span class="second-word">projects</span>
+                                         <span class="rest-of-sentence"><br>to quote on</span>
+                                      </div>
+                                   </button>
+                                </li>
+                             </ul>
+                          </div>
+                    <li class="nav-item withborder"><a class="nav-link" href="#">How it works?</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Sign Up</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" style="color: coral;">Freelancer?</a>
+                    </li>
+                 </ul>
+              </div>
+           </div>
+        </nav>
+     </div>
+     <div class="row">
+        <div class="d-block d-sm-none">
+           <div class="dropdown show">
+              <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                 aria-haspopup="true" aria-expanded="false">
+              Browse by Category
+              </a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                 <a class="dropdown-item" href="#">Technology & programming</a>
+                 <a class="dropdown-item" href="#">Writing & Translation</a>
+                 <a class="dropdown-item" href="#">Design</a>
+                 <a class="dropdown-item" href="#">Digital Marketing</a>
+                 <a class="dropdown-item" href="#">Business</a>
+                 <a class="dropdown-item" href="#">Music & Audio</a>
+                 <a class="dropdown-item" href="#">Social Media</a>
+                 <a class="dropdown-item" href="#">Media & Branding</a>
+              </div>
+           </div>
+        </div>
+        <div class="row">
+           <div class="d-none d-sm-block">
+              <ul class="list-group list-group-horizontal bar2">
+                 <li class="list-group-item borderless">Tech & programming</li>
+                 <li class="list-group-item borderless">Writing & Translation</li>
+                 <li class="list-group-item borderless">Design</li>
+                 <li class="list-group-item borderless">Digital Marketing</li>
+                 <li class="list-group-item borderless">Business</li>
+                 <li class="list-group-item borderless">Music & Audio</li>
+                 <li class="list-group-item borderless">Social Media</li>
+                 <li class="list-group-item borderless">Media & Branding</li>
+              </ul>
+           </div>
+        </div>
+        <div class="row mx-0 d-flex align-items-center" style="background-color: whitesmoke;">
+           <div class="col-md-6 order-md-2 d-flex align-items-center">
+              <div class="image">
+                 <img src="pic1.png" alt="Website Image" class="img-fluid" />
+              </div>
+           </div>
+           <div class="col-md-6 order-md-1 ">
+              <div class="text py-5 awesome" style="font-size: x-large;">
+                 <h1>Make bright ideas happen</h1>
+                 <h4>Access global talent on the freelancer website trusted by over 1 million businesses
+                    worldwide.
+                 </h4>
+              </div>
+              <div class="input-group mb-3">
+                 <input type="text" id="searchInput" class="form-control" placeholder="Try 'web development'">
+                 <div class="input-group-prepend">
+                    <span class="input-group-text awesome"><i class="fa fa-search"
+                       style="line-height: inherit;"></i></span>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 10px;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  background-color: #350336;
+  padding: 20px;
+}
+
+#profile-picture img {
+  width: 30%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #007bff;
+}
+
+.header-details {
+  text-align: left;
+}
+
+h1 {
+  color: white;
+  font-size: 35px;
+}
+
+h2 {
+  color: #333;
+}
+
+p {
+  color: #666;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+}
+
+.left-section {
+    background-color: white;
+    width: 50%; 
+    padding: 20px;
+}
+.right-section {
+    background-color: white;
+    width: 50%;
+    padding: 20px;
+}
+.separator {
+    border: 1px solid brown; /* Adjust the color and border width as needed */
+    margin: 20px 0; /* Adds some space above and below the line */
+}

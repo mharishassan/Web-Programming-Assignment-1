@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Job Application Form</h1>
+    <form id="application-form">
+      <h2>Personal Information</h2>
+      <div class="form-group">
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" name="first-name" required />
+      </div>
+      <div class="form-group">
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" name="last-name" required />
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required />
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+      <div class="form-group">
+        <label for="street">Street Address:</label>
+        <input type="text" id="street" name="street" required />
+      </div>
+      <div class="form-group">
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" required />
+      </div>
+      <div class="form-group">
+        <label for="state">State:</label>
+        <select name="state" id="state" required>
+          <option value="">Select State</option>
+          <option value="Matric">Matric</option>
+          <option value="Inter">Inter</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="zip-code">ZIP Code:</label>
+        <input type="text" id="zip-code" name="zip-code" required />
+      </div>
+
+      <h2>Resume and Cover Letter</h2>
+      <div class="form-group">
+        <label for="resume">Upload Resume (PDF format):</label>
+        <input type="file" id="resume" name="resume" accept=".pdf" required />
+      </div>
+      <div class="form-group">
+        <label for="cover-letter">Cover Letter:</label>
+        <textarea
+          id="cover-letter"
+          name="cover-letter"
+          rows="5"
+          required
+        ></textarea>
+      </div>
+
+      <h2>Education</h2>
+      <div class="form-group">
+        <label for="education-level">Highest Level of Education:</label>
+        <select name="education-level" id="education-level" required>
+          <option value="">Select Level</option>
+          <option value="Matric">Matric</option>
+          <option value="Inter">Inter</option>
+          <option value="Bachelor's Degree">Bachelor's Degree</option>
+          <option value="Master's Degree">Master's Degree</option>
+          <option value="Ph.D.">Ph.D.</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="school-name">School/University Name:</label>
+        <input type="text" id="school-name" name="school-name" required />
+      </div>
+      <div class="form-group">
+        <label for="major">Major/Area of Study:</label>
+        <input type="text" id="major" name="major" required />
+      </div>
+      <div class="form-group">
+        <label for="graduation-year">Graduation Year:</label>
+        <input
+          type="number"
+          id="graduation-year"
+          name="graduation-year"
+          min="2000"
+          max="2027"
+          required
+        />
+      </div>
+
+      <h2>Employment History</h2>
+      <div id="employment-history-container">
+        <div class="employment-history-section">
+          <h3>Previous Job 1</h3>
+          <div class="form-group">
+            <label for="job-title-1">Job Title:</label>
+            <input
+              type="text"
+              id="job-title-1"
+              name="employment_history[1][job_title]"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="company-name-1">Company Name:</label>
+            <input
+              type="text"
+              id="company-name-1"
+              name="employment_history[1][company_name]"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="start-date-1">Start Date:</label>
+            <input
+              type="date"
+              id="start-date-1"
+              name="employment_history[1][start_date]"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="end-date-1">End Date:</label>
+            <input
+              type="date"
+              id="end-date-1"
+              name="employment_history[1][end_date]"
+            />
+          </div>
+          <div class="form-group">
+            <label for="job-responsibilities-1">Job Responsibilities:</label>
+            <textarea
+              id="job-responsibilities-1"
+              name="employment_history[1][job_responsibilities]"
+              rows="3"
+              required
+            ></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="add-job-button-container">
+        <button type="button" id="add-job-button">Add Another Job</button>
+      </div>
+
+      <h2>Skills</h2>
+      <div class="skill-section">
+        <h3>Relevant Skills</h3>
+        <div class="form-group">
+          <input
+            type="text"
+            class="skill-input"
+            name="skills[]"
+            placeholder="Skill 1"
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="text"
+            class="skill-input"
+            name="skills[]"
+            placeholder="Skill 2"
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="text"
+            class="skill-input"
+            name="skills[]"
+            placeholder="Skill 3"
+          />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="certifications">Certifications:</label>
+        <textarea id="certifications" name="certifications" rows="3"></textarea>
+      </div>
+
+      <h2>Availability</h2>
+      <div class="form-group">
+        <label for="start-date-availability">Start Date Availability:</label>
+        <input
+          type="date"
+          id="start-date-availability"
+          name="availability[start_date]"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="preferred-work-schedule">Preferred Work Schedule:</label>
+        <select
+          name="availability[preferred_schedule]"
+          id="preferred-work-schedule"
+          required
+        >
+          <option value="">Select Schedule</option>
+          <option value="Full-Time">Full-Time</option>
+          <option value="Part-Time">Part-Time</option>
+          <option value="Flexible">Flexible</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="willing-relocate">Willing to Relocate (Yes/No):</label>
+        <select
+          name="availability[willing_relocate]"
+          id="willing-relocate"
+          required
+        >
+          <option value="">Select Choice</option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
+      </div>
+
+      <h2>References</h2>
+      <div id="references-container">
+        <div class="reference-section">
+          <h3>Reference 1</h3>
+          <div class="form-group">
+            <label for="reference-name-1">Name:</label>
+            <input
+              type="text"
+              id="reference-name-1"
+              name="references[1][name]"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="reference-contact-1">Contact Information:</label>
+            <input
+              type="text"
+              id="reference-contact-1"
+              name="references[1][contact_info]"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="reference-relationship-1">Relationship to You:</label>
+            <input
+              type="text"
+              id="reference-relationship-1"
+              name="references[1][relationship]"
+              required
+            />
+          </div>
+        </div>
+      </div>
+      <div class="add-reference-button-container">
+        <button type="button" id="add-reference-button">
+          Add Another Reference
+        </button>
+      </div>
+
+      <h2>Additional Questions</h2>
+      <div class="form-group">
+        <label for="why-work-here"
+          >Why do you want to work for this company?</label
+        >
+        <textarea
+          id="why-work-here"
+          name="why_work_here"
+          rows="5"
+          required
+        ></textarea>
+      </div>
+
+      <h2>Consent and Agreement</h2>
+      <div class="form-group">
+        <label for="terms-and-conditions">
+          <input
+            type="checkbox"
+            id="terms-and-conditions"
+            name="terms_and_conditions"
+            required
+          />
+          I agree to the terms and conditions.
+        </label>
+      </div>
+      <div class="form-group">
+        <label for="privacy-policy">
+          <input
+            type="checkbox"
+            id="privacy-policy"
+            name="privacy_policy"
+            required
+          />
+          I acknowledge that I have read and understood the privacy policy.
+        </label>
+      </div>
+
+      <button id="submit-application-button">Submit Button</button> <br />
+      <button id="view-application-button">Show in Table</button>
+    </form>
+    <div id="application-table-container" style="display: none">
+      <h2 class="heading">Submitted Application</h2>
+      <table id="application-table"></table>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
